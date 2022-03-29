@@ -4,6 +4,7 @@
   vertical-align: baseline;
   list-style: none;
   border: 0;
+  font-family: "Raleway", sans-serif;
 }
 body {
   background: linear-gradient(
@@ -103,6 +104,37 @@ body {
   font-size: 14px;
   line-height: 20px;
 }
+/*section3*/
+.section3-img {
+  margin-top: 50px;
+  width: 100%;
+}
+.section3 {
+  color: white;
+  font-size: 14px;
+  width: 80vw;
+  margin-left: 10vw;
+  text-align: left;
+}
+.section3-title {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.section3-text {
+  margin-top: 20px;
+}
+.section3-link {
+  margin: 20px 0 50px 0;
+  height: 40px;
+  color: #62e0d9;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background: none;
+  border-bottom: 2px solid #62e0d9;
+}
 
 /* for screens bigger than 1024 */
 
@@ -119,7 +151,7 @@ body {
   .main-container {
     background-image: url(/assets/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 0 900px;
+    background-position: 0 950px;
     background-size: 100vw 50vh;
   }
   /*navbar*/
@@ -164,5 +196,26 @@ body {
   }
   .section2-item {
     width: 80%;
+  }
+  /*section3*/
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .section3-title {
+    font-size: 45px;
+    width: 500px;
+  }
+  .section3-text {
+    font-size: 16px;
+    line-height: 25px;
+    width: 30vw;
+  }
+  .section3-link {
+    font-size: 16px;
   }
 }
