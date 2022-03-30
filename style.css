@@ -18,7 +18,7 @@ body {
 }
 .main-container {
   margin: 0 auto;
-  background-image: url(/assets/bg-curvy-mobile.svg);
+  background-image: url(./assets/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-position: 0 290px;
 }
@@ -135,6 +135,48 @@ body {
   background: none;
   border-bottom: 2px solid #62e0d9;
 }
+/*section4*/
+.section4 {
+  margin: 200px 10vw 0 10vw;
+  color: white;
+}
+.section4-card {
+  background-color: #202a3c;
+  margin-top: 30px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  max-width: 400px;
+}
+.section4-text {
+  margin: 20px 10px 20px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  font-family: "Open Sans";
+}
+.section4-profile {
+  margin: 0 0 0px 10px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: 12px;
+}
+.section4-img {
+  height: 30px;
+  grid-row-start: span 2;
+  border-radius: 50%;
+}
+.section4-name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: left;
+  font-family: "Open Sans";
+}
+.section4-position {
+  font-size: 10px;
+  text-align: left;
+}
 
 /* for screens bigger than 1024 */
 
@@ -147,9 +189,10 @@ body {
       #181f2a 1400px,
       #181f2a 100%
     );
+    justify-content: center;
   }
   .main-container {
-    background-image: url(/assets/bg-curvy-desktop.svg);
+    background-image: url(./assets/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-position: 0 950px;
     background-size: 100vw 50vh;
@@ -217,5 +260,19 @@ body {
   }
   .section3-link {
     font-size: 16px;
+  }
+  .section3-img {
+    min-width: 30vw;
+  }
+  /*section4*/
+  .section4 {
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    justify-items: center;
+    width: 70vw;
+    min-width: 1000px;
+    max-width: 1200px;
   }
 }
