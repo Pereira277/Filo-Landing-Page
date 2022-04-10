@@ -6,6 +6,9 @@
   border: 0;
   font-family: "Raleway", sans-serif;
 }
+input {
+  text-align: center;
+}
 body {
   background: linear-gradient(
     180deg,
@@ -21,9 +24,6 @@ body {
   background-image: url(./assets/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
   background-position: 0 290px;
-}
-.width {
-  max-width: 1900px;
 }
 /*Navbar*/
 .header {
@@ -89,7 +89,7 @@ body {
 }
 .section2-item {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .section2-img {
   height: 60px;
@@ -106,7 +106,7 @@ body {
 }
 /*section3*/
 .section3-img {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
 }
 .section3 {
@@ -125,7 +125,7 @@ body {
   margin-top: 20px;
 }
 .section3-link {
-  margin: 20px 0 50px 0;
+  margin: 20px 0 0px 0;
   height: 40px;
   color: #62e0d9;
   display: grid;
@@ -137,7 +137,7 @@ body {
 }
 /*section4*/
 .section4 {
-  margin: 200px 10vw 0 10vw;
+  margin: 100px 10vw 0 10vw;
   color: white;
 }
 .section4-card {
@@ -176,6 +176,45 @@ body {
 .section4-position {
   font-size: 10px;
   text-align: left;
+}
+/*section5*/
+.section5 {
+  justify-self: center;
+  width: 90vw;
+  margin: 100px auto;
+  padding: 40px 0px 30px 0px;
+  background-color: #1c2431;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.section5-title {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+.section5-text {
+  margin: 20px 20px 30px 20px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+}
+.section5-input {
+  width: 85%;
+  height: 40px;
+  border-radius: 50px;
+}
+.section5-button {
+  margin-top: 20px;
+  width: 85%;
+  height: 40px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 217, 212, 1) 5%,
+    rgba(80, 182, 226, 1) 100%
+  );
+  color: white;
 }
 
 /* for screens bigger than 1024 */
@@ -237,8 +276,11 @@ body {
     grid-column-gap: 10%;
     justify-items: center;
   }
+  .section1-img {
+    width: 60%;
+  }
   .section2-item {
-    width: 80%;
+    width: 100%;
   }
   /*section3*/
   .section3 {
@@ -274,5 +316,46 @@ body {
     width: 70vw;
     min-width: 1000px;
     max-width: 1200px;
+  }
+  /*section5*/
+  .section5 {
+    max-width: 40%;
+    padding: 40px 40px 20px 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr;
+  }
+  .section5-title {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+  }
+  .section5-text {
+    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+    margin: 20px auto 30px auto;
+  }
+  .section5-input {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+  }
+  .section5-button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    margin-top: 0px;
+  }
+}
+
+/* Ultrawide*/
+@media only screen and (min-width: 2000px) {
+  .section1-img {
+    width: 50%;
   }
 }
